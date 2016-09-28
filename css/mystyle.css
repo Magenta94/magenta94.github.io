@@ -94,12 +94,6 @@ body {
   background: url(https://dl.dropboxusercontent.com/u/3400459/CodePen/Fullscreen-DIVs/yellow.png) center center no-repeat scroll #FFDB77;
 }
 
-.timeline {
-	/* Caused by Semantic UI */
-	width: 668px;
-	padding-top: 50px;
-}
-
 #back-to-top {
     position: fixed;
     bottom: 40px;
