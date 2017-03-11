@@ -12,7 +12,7 @@
 		<title>Davide Pizzighella</title>
 </head>
 <body>
-	<div class="ui black four item inverted menu fixed">
+	<div class="ui black four item inverted menu fixed navbar page grid">
 	  <a class="item" href="#one"><p><i class="user icon"></i> About</p></a>
 	  <a class="item" href="#two"><p><i class="book icon"></i> Portfolio</p></a>
 	  <a class="item" href="#three"><p><i class="calendar icon"></i>Life Events</p></a>
@@ -28,7 +28,7 @@
 				<h1>Welcome :)</h1>
 				<p>
 					I'm Davide, an italian Developer.<br><br> I have a Bachelor Degree at the University of Trento in Computer Science.<br><br>
-					Currently I'm doing an internship as Visual C++ Developer.<br>
+					Currently I'm doing an apprenticeship as Visual C++ Developer.<br>
 					My interests are <strong>Human-Computer Interaction</strong>, <strong>Mobile Apps</strong>, <strong>Web Programming</strong> and working with <strong>Databases</strong>.<br><br>
 					Below you can find some of my past works, like mobile apps or university projects. Take a look ;)
 				</p>
@@ -74,6 +74,30 @@
 						    </div>
 						    <div class="description">
 						      An app that allows the tracking of allergies
+						    </div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="column hideme">
+						<div class="ui link card centered" onclick="openModal('Stomap');">
+						  <div class="blurring dimmable image">
+						  	<div class="ui dimmer">
+					        <div class="content">
+					          <div class="center">
+					            <div class="ui inverted button">Details</div>
+					          </div>
+					        </div>
+					      </div>
+						    <img src="images/stomap.jpg">
+						  </div>
+						  <div class="content">
+						    <a class="header">Stomap</a>
+						    <div class="meta">
+						      <span class="date">Android</span>
+						    </div>
+						    <div class="description">
+						      An app that helps people with a stoma
 						    </div>
 						  </div>
 						</div>
@@ -142,8 +166,7 @@
 			<div class="column center aligned">
 				<h1 id="h1contacts">Contacts</h1>
 				<p id="page_four_email_text">Feel free to contact me if you have any requests or questions.</p>
-				<i id="icon-email" class="fa fa-envelope-o" aria-hidden="true"></i>
-				<span class="e-mail" data-user="allehgizzip.edivad" data-website="ti.liamtoh"></span>
+				<button class="ui primary button" onclick="location.href='https://www.linkedin.com/in/davide-pizzighella-692774129'"><i class="user icon"></i>Linkedin</button>
 			</div>
 		</div>
 	</div>
@@ -176,11 +199,28 @@
 					  cancelButtonColor: '#d33',
 					  confirmButtonColor: '#3085d6',
 					}).then(function() {
-					  swal({
-					  	title: 'Coming soon ;)'
-					  });
+					   window.open("https://play.google.com/store/apps/details?id=davide.tutorial");
 					});
 					break;
+
+				case 'Stomap':
+					swal({
+					  //title: 'AllergiApp',
+					  text: '',
+					  html:
+					    '<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class="embed-container"><iframe src="https://www.youtube.com/embed/gb18FePc8sA" frameborder="0" allowfullscreen></iframe></div><br>'+
+					    'Stomap helps stoma patients providing useful information about food, sports, videos, nearby surgeries and more... It is developed for a graduated friend who works with this kind of patients.',
+					  showCloseButton: true,
+					  showCancelButton: true,
+					  confirmButtonText: '<i class="fa fa-download"></i> View on the Play Store',
+					  cancelButtonText: 'Close',
+					  cancelButtonColor: '#d33',
+					  confirmButtonColor: '#3085d6',
+					}).then(function() {
+					   window.open("https://play.google.com/store/apps/details?id=lardelli.stomap");
+					});
+					break;
+
 				case 'Cinema':
 					swal({
 					  //title: 'AllergiApp',
