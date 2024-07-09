@@ -266,24 +266,27 @@
     "publishEditFolder": false,
     "usedWebp": true,
     "favicon": false,
-    "mbrsiteDomain": "5jwxoebmpn",
+    "mbrsiteDomain": "cdn2zmyuzv",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
+    "sitemapSwitcherAuto": "on",
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "publishChangesOnly": false
+    "publishChangesOnly": false,
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n"
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
         "title": "Blood On Blood - Bon Jovi Tribute Band",
-        "meta_descr": "I Blood on Blood nascono da un’idea che unisce la passione verso una delle band iconiche degli ’80 alla voglia di offrire al panorama della musica live del veronese qualcosa che mancava decisamente.",
+        "meta_descr": "Vivi l'energia dei Bon Jovi con la nostra tribute band. Unisciti alla festa del rock con un vero tributo Bon Jovi!",
         "header_custom": "",
         "footer_custom": "",
-        "html_before": ""
+        "html_before": "",
+        "socialSharingUrl": "",
+        "meta_image": "@PROJECT_PATH@/assets/images/favicon-128x128.png"
       },
       "components": [
         {
